@@ -212,6 +212,7 @@ col-start-n = 从 第 n 条网格线 开始，col-end-n = 到 第 n 条网格线
 
 ### [行](https://tailwindcss.com/docs/grid-template-rows)
 Grid Row 用于控制元素在网格的行方向上的跨度和位置。 
+
 <img width="500" src="../../img/what_i_learnt/TailwindCSS4/Layout/15.png" />
 
 ### [行延展](https://tailwindcss.com/docs/grid-row)
