@@ -139,7 +139,7 @@ Understand the shape, skewness, and normality of variables.  了解变量的形�
 >> Improves linearity 更容易建立线性关系
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/5cc5a3e7-8b79-4c4e-a759-8fa7e32cfab4" width="600"><br>
+  <img src="../../img/what_i_learnt/DataScience/数据分布图.png" width="600"><br>
   <p><a href="https://medium.com/geekculture/what-are-right-skewed-and-left-skewed-distributions-a29b3def7598">数据分布图</a></p>
 </div>
 
@@ -346,7 +346,7 @@ Use past observations as new features  将过去的观测值作为新特征
 | Full | All rows + NaN | Full data 全量数据 |
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/85ea1431-f5fa-43ff-926b-edc48f24c5f1" width="600"><br>
+  <img src="../../img/what_i_learnt/DataScience/合并策略.png" width="600"><br>
   <p><a href="https://datacomy.com/data_analysis/pandas/merge/">合并策略</a></p>
 </div>
 
@@ -444,7 +444,7 @@ Use past observations as new features  将过去的观测值作为新特征
 | Heatmap 热力图 | Displays correlation or matrix values 展示相关性或矩阵数值 |
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/249f5ee4-5fce-4a42-91f3-a5f62ff8480e" width="600"><br>
+  <img src="../../img/what_i_learnt/DataScience/直方图与条形图.png" width="600"><br>
   <p><a href="https://keydifferences.com/difference-between-histogram-and-bar-graph.html/">直方图 vs. 条形图</a></p>
 </div>
 
