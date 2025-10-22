@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-basics</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Bootstrap 5 Examples - Basics</h1>
+    <div>
+        <h2>容器 Container</h2>
+        <p>Bootstrap 的布局都必须放在容器里，它控制页面宽度和响应式断点。</p>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>这是固定宽度容器 .container: 固定宽度，随屏幕大小自动调整，但在不同断点有最大宽度限制</p>
+            <div class="row bg-secondary p-2">
+                <div class="col-6 bg-primary text-white text-center p-2">左半部分</div>
+                <div class="col-6 bg-success text-white text-center p-2">右半部分</div>
+            </div>
+        </div>
+
+        <div class="container-fluid bg-light p-3 mb-3">
+            <p>这是全屏宽度容器 .container-fluid: 永远占满整屏宽度</p>
+            <div class="row bg-secondary p-2">
+                <div class="col-4 bg-info text-dark p-2">列 1</div>
+                <div class="col-4 bg-success text-dark text-center p-2">列 2</div>
+                <div class="col-4 bg-danger text-dark text-center p-2">列 3</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>行 Row + 列 Col</h2>
+        <p>行用来水平排列列（col）：.row 自动去除列间的负边距，使列对齐正确。</p>
+        <p>列必须放在 .row 里，.col 默认等分。也可以使用 .col-{n} 指定列宽，n 取值 1-12，表示 12 栅格系统中的份额。</p>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>基础 Row + Col：三列平分宽度，每列等宽。</p>
+            <div class="row bg-secondary p-2">
+                <div class="col bg-info text-dark text-center p-2">列 1</div>
+                <div class="col bg-success text-dark text-center p-2">列 2</div>
+                <div class="col bg-warning text-dark text-center p-2">列 3</div>
+            </div>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>指定列宽：左右各占 6 栅格。</p>
+            <div class="row bg-secondary p-2">
+                <div class="col-6 bg-info text-dark text-center p-2">col-6 左半</div>
+                <div class="col-6 bg-success text-dark text-center p-2">col-6 右半</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>响应式列</h2>
+        <p>Bootstrap 提供断点类，让列在不同屏幕尺寸下自适应：sm: ≥576px; md: ≥768px; lg: ≥992px; xl: ≥1200px; xxl: ≥1400px</p>
+
+        <div class="container bg-light p-3 mb-3">
+            <div class="row bg-secondary p-2">
+                <div class="col-12 col-sm-6 col-md-4 bg-info text-dark text-center p-2 mb-2">col-12/sm-6/md-4</div>
+                <div class="col-12 col-sm-6 col-md-4 bg-success text-dark text-center p-2 mb-2">col-12/sm-6/md-4</div>
+                <div class="col-12 col-sm-12 col-md-4 bg-warning text-dark text-center p-2 mb-2">col-12/sm-12/md-4</div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>排版与文本样式 Typography</h2>
+        <p>Bootstrap 提供内置类来控制文字的字重、斜体、对齐、大小写、行高、字号和颜色。</p>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="fw-bold text-dark p-2">fw-bold：加粗文字</p>
+            <p class="fw-semibold text-dark p-2">fw-semibold：半粗文字</p>
+            <p class="fw-normal text-dark p-2">fw-normal：正常文字</p>
+            <p class="fw-light text-dark p-2">fw-light：细字体</p>
+            <p class="fw-bold text-dark p-2">fw-bold：加粗文字</p>
+            <p class="fst-italic text-dark p-2">fst-italic：斜体文字</p>
+            <p class="fw-normal text-dark p-2">fw-normal：正常文字</p>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="text-start text-dark p-2">text-start：左对齐</p>
+            <p class="text-center text-dark p-2">text-center：居中</p>
+            <p class="text-end text-dark p-2">text-end：右对齐</p>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="text-uppercase text-dark p-2">text-uppercase：全部大写</p>
+            <p class="text-lowercase text-dark p-2">TEXT-LOWERCASE：全部小写</p>
+            <p class="text-capitalize text-dark p-2">text-capitalize：每个单词首字母大写</p>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="lh-1 bg-secondary text-white p-2">lh-1：行高 1</p>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <p class="lh-sm bg-secondary text-white p-2">lh-sm：行高稍小</p>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <p class="lh-base bg-secondary text-white p-2">lh-base：默认行高</p>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <p class="lh-lg bg-secondary text-white p-2">lh-lg：行高稍大</p>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="fs-1 text-dark p-2">fs-1：最大字号</p>
+            <p class="fs-2 text-dark p-2">fs-2</p>
+            <p class="fs-3 text-dark p-2">fs-3</p>
+            <p class="fs-4 text-dark p-2">fs-4</p>
+            <p class="fs-5 text-dark p-2">fs-5</p>
+            <p class="fs-6 text-dark p-2">fs-6：最小字号</p>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="text-primary p-2">text-primary：蓝色文字</p>
+            <p class="text-secondary p-2">text-secondary：灰色文字</p>
+            <p class="text-success p-2">text-success：绿色文字</p>
+            <p class="text-danger p-2">text-danger：红色文字</p>
+            <p class="text-warning p-2">text-warning：黄色文字</p>
+            <p class="text-info p-2">text-info：青色文字</p>
+            <p class="text-light bg-dark p-2">text-light：浅色文字</p>
+            <p class="text-dark p-2">text-dark：深色文字</p>
+            <p class="text-muted p-2">text-muted：浅灰色文字</p>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p class="bg-primary text-white p-2">bg-primary + text-white：蓝色背景白色文字</p>
+            <p class="bg-success text-white p-2">bg-success + text-white：绿色背景白色文字</p>
+            <p class="bg-warning text-dark p-2">bg-warning + text-dark：黄色背景深色文字</p>
+            <p class="bg-dark text-white p-2">bg-dark + text-white：深色背景白色文字</p>
+        </div>
+    </div>
+
+
+    <div>
+        <h2>间距与尺寸 Spacing & Sizing</h2>
+        <p>在 Bootstrap 中，控制间距的工具类分为 margin（外边距）和 padding（内边距）。对于 margin，你可以用 m- 给元素四周都加外边距，用 mt- 给上方加，用 mb- 给下方加。为了适应不同的文字方向（LTR 或 RTL），Bootstrap 使用逻辑方向的类：ms- 是起始边（左侧在 LTR，右侧在 RTL），me- 是结束边（右侧在 LTR，左侧在 RTL）。如果想同时控制水平的左右，可以用 mx-；控制垂直的上下可以用 my-。</p>
+        <p>padding 也是同样的规则，只是前缀换成 p：p- 是四周，pt- 上内边距，pb- 下内边距，ps- 起始边，pe- 结束边，px- 水平，py- 垂直。</p>
+        <p>所有类后面的数字从 0 到 5，表示间距大小递增，0 是没有间距，1 到 5 对应 Bootstrap 内置的尺度，通常从 0.25rem 到 3rem 不等。</p>
+        
+        <h5>外边距 Margin（m-0 ~ m-5）</h5>
+        <div class="container bg-light p-3 mb-3">
+            <div class="bg-primary text-white m-0 p-2">m-0</div>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <div class="bg-secondary text-white m-1 p-2">m-1</div>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <div class="bg-success text-white m-2 p-2">m-2</div>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <div class="bg-warning text-white m-3 p-2">m-3</div>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <div class="bg-info text-white m-4 p-2">m-4</div>
+        </div>
+        <div class="container bg-light p-3 mb-3">
+            <div class="bg-danger text-white m-5 p-2">m-5</div>
+        </div>
+
+        <h5>内边距 Padding（p-0 ~ p-5）</h5>
+        <div class="container bg-light mb-3">
+            <div class="bg-primary text-white p-0">p-0</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-secondary text-white p-1">p-1</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-success text-white p-2">p-2</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-warning text-white p-3">p-3</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-info text-white p-4">p-4</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-danger text-white p-5">p-5</div>
+        </div>
+
+        <h5>单方向间距 & 水平居中</h5>
+        <div class="container bg-light mb-3">
+            <div class="bg-primary text-white mt-3 mb-4 p-2">mt-3 + mb-4</div>
+        </div>
+        <div class="container d-flex justify-content-center mb-3">
+            <div class="bg-success text-white p-2 w-50">mx-auto：水平居中</div>
+        </div>
+
+        <h5>宽高控制</h5>
+        <div class="container bg-light mb-3">
+            <div class="bg-primary text-white w-25 p-2">w-25</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-success text-white w-50 p-2">w-50</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-warning text-white w-75 p-2">w-75</div>
+        </div>
+        <div class="container bg-light mb-3">
+            <div class="bg-danger text-white w-100 p-2">w-100</div>
+        </div>
+        <div class="container bg-light" style="height:200px;">
+            <div class="bg-dark text-white w-50 h-100 d-flex align-items-center justify-content-center">h-100：占满父容器高度
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Flex 与对齐 Flex & Alignment</h2>
+        <p>Bootstrap 提供 flex 工具类，让布局快速实现水平、垂直排列和间距控制。</p>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>d-flex：将容器设置为 flex 布局，子元素水平排列（默认 flex-row）</p>
+            <div class="d-flex bg-secondary p-2">
+                <div class="bg-primary text-white p-2 me-2">子元素 1</div>
+                <div class="bg-success text-white p-2 me-2">子元素 2</div>
+                <div class="bg-warning text-white p-2">子元素 3</div>
+            </div>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>justify-content-*：控制子元素在主轴（水平方向）上的对齐方式</p>
+            <p>start：靠左</p>
+            <div class="d-flex justify-content-start bg-secondary p-2 mb-2">
+                <div class="bg-primary text-white p-2">start</div>
+                <div class="bg-success text-white p-2">start</div>
+            </div>
+            <p>center：居中</p>
+            <div class="d-flex justify-content-center bg-secondary p-2 mb-2">
+                <div class="bg-primary text-white p-2">center</div>
+                <div class="bg-success text-white p-2">center</div>
+            </div>
+            <p>between：两端对齐，中间平均分布</p>
+            <div class="d-flex justify-content-between bg-secondary p-2">
+                <div class="bg-primary text-white p-2">between 1</div>
+                <div class="bg-success text-white p-2">between 2</div>
+                <div class="bg-warning text-white p-2">between 3</div>
+            </div>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>align-items-*：控制子元素在交叉轴（垂直方向）上的对齐方式</p>
+            <p>start：靠上</p>
+            <div class="d-flex align-items-start bg-secondary p-2 mb-2" style="height:100px;">
+                <div class="bg-primary text-white p-2">start</div>
+                <div class="bg-success text-white p-2">start</div>
+            </div>
+            <p>center：垂直居中</p>
+            <div class="d-flex align-items-center bg-secondary p-2 mb-2" style="height:100px;">
+                <div class="bg-primary text-white p-2">center</div>
+                <div class="bg-success text-white p-2">center</div>
+            </div>
+            <p>end：靠下</p>
+            <div class="d-flex align-items-end bg-secondary p-2" style="height:100px;">
+                <div class="bg-primary text-white p-2">end</div>
+                <div class="bg-success text-white p-2">end</div>
+            </div>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>flex-row / flex-column：控制子元素排列方向</p>
+            <p>flex-row（默认水平排列）</p>
+            <div class="d-flex flex-row bg-secondary p-2 mb-2">
+                <div class="bg-primary text-white p-2 me-2">row 1</div>
+                <div class="bg-success text-white p-2 me-2">row 2</div>
+                <div class="bg-warning text-white p-2">row 3</div>
+            </div>
+            <p>flex-column（垂直排列）</p>
+            <div class="d-flex flex-column bg-secondary p-2">
+                <div class="bg-primary text-white p-2 mb-2">col 1</div>
+                <div class="bg-success text-white p-2 mb-2">col 2</div>
+                <div class="bg-warning text-white p-2">col 3</div>
+            </div>
+        </div>
+
+        <div class="container bg-light p-3 mb-3">
+            <p>gap-*：控制 flex 子元素之间的间距</p>
+            <p>gap-2：间距小</p>
+            <div class="d-flex gap-2 bg-secondary p-2 mb-2">
+                <div class="bg-primary text-white p-2">1</div>
+                <div class="bg-success text-white p-2">2</div>
+                <div class="bg-warning text-white p-2">3</div>
+            </div>
+            <p>gap-3：间距大</p>
+            <div class="d-flex gap-3 bg-secondary p-2">
+                <div class="bg-primary text-white p-2">1</div>
+                <div class="bg-success text-white p-2">2</div>
+                <div class="bg-warning text-white p-2">3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
