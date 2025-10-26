@@ -1,0 +1,1 @@
+This is the file5.txt in sub_dir_c.

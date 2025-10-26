@@ -1,0 +1,2 @@
+I will overwrite any existing content in the file3.txt.
+This line will be added to the end of the file3.txt.
