@@ -217,3 +217,33 @@ print(cal)
 # 13 14 15 16 17 18 19
 # 20 21 22 23 24 25 26
 # 27 28 29 30 31
+
+# --- This is a horizontal line for separation ---
+
+# define a function with no parameters
+def say_hello():
+    print("Hello!")
+
+say_hello() # Output: Hello!
+
+# define a funnction with parameters
+def sum(num1, num2):
+    sum = num1 + num2
+    print(sum)
+
+sum(1, 2) # Output: 3
+
+# define a function with a default parameter
+def sum_with_default(num1, num2, num3 = 5):
+    sum = num1 + num2 + num3
+    print(sum)
+
+sum_with_default(1, 2) # Output: 8
+sum_with_default(1, 2, 3) # Output: 6
+
+# define a function that returns a value
+def multiply(num1, num2):
+    return num1 * num2
+
+result = multiply(2, 3)
+print(result) # Output: 6
